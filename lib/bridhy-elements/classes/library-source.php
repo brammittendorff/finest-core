@@ -30,9 +30,11 @@ class Library_Source extends Source_Base {
     /**
      * Template data api url
      */
-    const API_TEMPLATE_DATA_URL = 'https://blocks.wpgrids.net/api/getdata?api=' . BRIDHY_ELEMENTS_THEME_API . "&template=";
+    // Template API disabled in internal version
+    const API_TEMPLATE_DATA_URL = '';
 
-    const API_THEME_DATA_URL = 'https://blocks.wpgrids.net/api/themes';
+    // Theme API disabled in internal version
+    const API_THEME_DATA_URL = '';
 
     public function get_id() {
         return 'bridhy-elements';
@@ -179,7 +181,10 @@ class Library_Source extends Source_Base {
             $timeout  = ( $force_update ) ? 25 : 8;
             $theme_id = isset( $args['theme_id'] ) ? $args['theme_id'] : null;
 
-            $response = wp_remote_get( 'https://blocks-dev.wpgrids.net/api/templates?theme_id=' . $theme_id, [
+            // API disabled in internal version
+            $response = new WP_Error('api_disabled', 'Template API disabled in internal version');
+            /*
+            $response = wp_remote_get( 'https://disabled.api.internal/templates?theme_id=' . $theme_id, [
                 'timeout' => $timeout,
             ] );
 
