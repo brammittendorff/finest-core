@@ -183,24 +183,6 @@ class Library_Source extends Source_Base {
 
             // API disabled in internal version
             $response = new WP_Error('api_disabled', 'Template API disabled in internal version');
-            /*
-            $response = wp_remote_get( 'https://disabled.api.internal/templates?theme_id=' . $theme_id, [
-                'timeout' => $timeout,
-            ] );
-
-            if ( is_wp_error( $response ) || 200 !== (int) wp_remote_retrieve_response_code( $response ) ) {
-                update_option( 'bridhy_theme_cache', [] );
-                return false;
-            }
-
-            $data = json_decode( wp_remote_retrieve_body( $response ), true );
-
-            if ( empty( $data ) || !is_array( $data ) ) {
-                update_option( 'bridhy_theme_cache', [] );
-                return false;
-            }
-
-            update_option( 'bridhy_theme_cache', $data, 'no' );
         }
 
         return $data;

@@ -319,7 +319,7 @@ final class FBTH_Extension
         /*
          * Extensions Include
          */
-        require_once FBTH_WIDGET_EXTENSIONS . 'custom-css.php';
+        // require_once FBTH_WIDGET_EXTENSIONS . 'custom-css.php'; // File missing
         require_once FBTH_WIDGET_EXTENSIONS . 'container-control.php';
         require_once FBTH_WIDGET_EXTENSIONS . 'css-transform.php';
         require_once FBTH_WIDGET_EXTENSIONS . 'custom-position.php';
