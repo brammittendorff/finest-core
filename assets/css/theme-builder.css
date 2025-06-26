@@ -1,0 +1,252 @@
+.vue-js-switch[data-v-33203615] {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 10px;
+    cursor: pointer
+}
+
+.v-switch-input[data-v-33203615] {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px
+}
+
+.v-switch-label[data-v-33203615] {
+    position: absolute;
+    top: 0;
+    font-weight: 600;
+    color: #fff;
+    z-index: 1
+}
+
+v-switch-label.v-left[data-v-33203615] {
+    left: 10px
+}
+
+v-switch-label.v-right[data-v-33203615] {
+    right: 10px
+}
+
+.v-switch-core[data-v-33203615] {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    transition: border-color .3s, background-color .3s;
+    will-change: border-color, background-color;
+    user-select: none
+}
+
+.v-switch-button[data-v-33203615] {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    background-color: #fff;
+    z-index: 2
+}
+
+.ui-modal-backdrop {
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.ui-modal-backdrop,
+.ui-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 99999
+}
+
+.ui-modal-content {
+    color: var(--uicore-color-7, #b0b8ca);
+    box-shadow: 0 9px 65px 1px hsla(0, 0%, 54.9%, .15);
+    background: var(--uicore-color-2, #171c29);
+    border: 1px solid var(--uicore-color-3, #242837);
+    width: 670px;
+    padding: 25px 30px 40px 50px;
+    border-radius: 4px;
+    margin: 0 auto;
+    height: auto;
+    max-height: clamp(500px, 840px, 85vh);
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased
+}
+
+.ui-modal-content main {
+    padding-right: 20px
+}
+
+.ui-modal-content .ui-modal-head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--uicore-color-3, #242837);
+    margin-right: 20px
+}
+
+.ui-modal-content .ui-modal-head .uicore_h1 {
+    margin-top: 15px
+}
+
+.ui-modal-content .ui-modal-close {
+    width: 42px;
+    height: 42px;
+    transition: opacity .3s ease;
+    will-change: opacity;
+    color: var(--uicore-color-8, #fff);
+    opacity: .5;
+    cursor: pointer;
+    text-align: right;
+    line-height: 42px;
+    font-size: 20px
+}
+
+.ui-modal-content .ui-modal-close:before {
+    content: "\2716"
+}
+
+.ui-modal-content .ui-modal-close:hover {
+    opacity: 1
+}
+
+.ui-modal-content .ui-modal-footer {
+    border-top: 1px solid var(--uicore-color-3, #242837);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px
+}
+
+.ui-modal-content .ui-modal-footer .uicore-btn {
+    padding: 0 30px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center
+}
+
+.ui-modal-content .ui-modal-footer .uicore-btn .eicon-save {
+    font-size: 115%
+}
+
+.ui-modal-content .ui-modal-footer span {
+    margin-right: 9px;
+    font-size: 139%;
+    line-height: inherit
+}
+
+.ui-modal-content .uicore_l {
+    width: 340px
+}
+
+.button-link.editinline {
+    display: none
+}
+
+.uicore_tb main {
+    padding-bottom: 35px
+}
+
+.uicore-core-setting {
+    grid-template-columns: auto 340px !important;
+    margin-top: 35px !important
+}
+
+.uicore-core-setting:last-child {
+    margin-bottom: 35px
+}
+
+.ui-add-rule {
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .25s ease-in-out
+}
+
+.ui-add-rule:hover {
+    opacity: .8;
+    transition: all .25s ease-in-out
+}
+
+.ui-multiple {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column
+}
+
+.ui-multiple .ui-switch-sub {
+    margin-top: 35px
+}
+
+.multiselect.uicore-mm-width {
+    min-width: 165px
+}
+
+input.uicore_s {
+    max-width: 110px
+}
+
+.uicore-panel-menu,
+.uicore_dark_scheme {
+    --uicore-color-9: #242837;
+    --uicore-color-8: #fff;
+    --uicore-color-7: #e0e3eb;
+    --uicore-color-6: #6e778a;
+    --uicore-color-5: #5a6172;
+    --uicore-color-4: #3f4657;
+    --uicore-color-3: #262b3b;
+    --uicore-color-2: #171c29;
+    --uicore-color-1: #121623
+}
+
+.uicore-page-options,
+.uicore_light_scheme {
+    --uicore-color-9: #e7eaef;
+    --uicore-color-8: #172b4d;
+    --uicore-color-7: #1c2c4e;
+    --uicore-color-6: #1c2c4e;
+    --uicore-color-5: #5f6875;
+    --uicore-color-4: #b0b8ca;
+    --uicore-color-3: #eef0f5;
+    --uicore-color-2: #fff;
+    --uicore-color-1: #f4f5f7
+}
+
+.uicore_light_scheme .uicore-panel-content header {
+    box-shadow: none
+}
+
+.uicore_light_scheme .plugin-picture {
+    background-color: rgba(0, 0, 0, .4) !important
+}
+
+.uicore_light_scheme .ui-custom-font-list li:not(:hover) .actions .uicore-svg path {
+    fill: var(--uicore-color-6, #6e778a)
+}
+
+.ui-specifics {
+    margin-top: 6px
+}
+
+.ui-repeat-item {
+    margin-bottom: 20px
+}
+
+.ui-repeat-item>span {
+    margin-bottom: 8px;
+    display: block;
+    color: #dc4545
+}
+
+.ui-condition-action {
+    margin-bottom: 30px;
+}

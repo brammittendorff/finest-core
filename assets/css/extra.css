@@ -1,0 +1,187 @@
+/*---------------------------------------------------
+JQUERY FATEPICKER
+----------------------------------------------------*/
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev-hover .ui-icon,
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next.ui-datepicker-next-hover .ui-icon {
+    color: #FC624D !important;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-icon {
+    font-size: 14px !important;
+    transition: .4s;
+    top: 50%;
+    transform: translatey(-4px);
+}
+
+div#ui-datepicker-div {
+    border: blanchedalmond;
+    width: 239px;
+    border-radius: 0px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.ui-datepicker-header.ui-widget-header {
+    background-color: #EFF0F4 !important;
+    border-bottom: none !important;
+}
+
+td.ui-datepicker-days-cell-over.ui-datepicker-today,
+td.ui-datepicker-days-cell-over.ui-datepicker-today a {
+    background-color: #EFF0F4 !important;
+}
+
+td.ui-datepicker-days-cell-over.ui-datepicker-today a.ui-state-highlight {
+    border: none;
+}
+
+td a.ui-state-default {
+    font-size: 11px;
+}
+
+a.ui-state-default.ui-state-hover {
+    background-color: transparent !important;
+}
+
+.ui-datepicker-calendar tbody td:hover {
+    background: #EFF0F4;
+}
+
+.ui-datepicker th {
+    font-size: 12px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    font-size: 12px;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-icon:before {
+    margin-bottom: 6px;
+    display: block;
+}
+
+.ui-datepicker table {
+    margin-bottom: 0 !important;
+    border-top: none !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    border-radius: 0px !important;
+    overflow: hidden;
+    border: 0px !important;
+}
+
+table.ui-datepicker-calendar tr:first-child {
+    border-top: none !important;
+}
+
+.ui-widget-content tr {
+    height: 35px !important;
+}
+
+
+/*---------------------------------------------------
+Elementor Css
+----------------------------------------------------*/
+
+.elementor-counter .elementor-counter-number-prefix,
+.elementor-counter .elementor-counter-number-suffix {
+    flex-grow: unset;
+}
+
+/* video button */
+.elementor-custom-embed-play i.eicon-play:before {
+    content: "\f04b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+div.elementor-custom-embed-play i {
+    font-size: 14px;
+}
+
+.elementor-custom-embed-play {
+    width: 92px;
+    height: 92px;
+    line-height: 92px;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementor-wrapper.elementor-open-lightbox {
+    position: relative;
+}
+
+.elementor-wrapper.elementor-open-lightbox:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    content: "";
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.elementor-custom-embed-play {
+    z-index: 2;
+}
+
+
+/* Video Butoon Animation  */
+.elementor-open-lightbox {
+    z-index: 99;
+}
+
+.elementor-custom-embed-play:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.elementor-icon {
+    display: inline-flex !important;
+}
+
+.elementor-widget-text-editor .elementor-drop-cap {
+    line-height: 0;
+}
+
+/* graditent text */
+.fbth-addons-feature-icon.icon-type-text .gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
